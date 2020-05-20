@@ -1,0 +1,114 @@
+.a-blog-heading h2 {
+    padding-bottom: 4%;
+    font-weight: bold;
+}
+
+
+.a-blog-cards-heading {
+    font-weight: bold;
+    padding: 6% 4% 0%;
+}
+
+.a-blog-cards .img {
+    width: 100%;
+}
+
+.a-the-team-banner img {
+    width: 100%;
+}
+
+.a-blog-card-holder .img {
+    width: 100%;
+}
+
+.a-blog-card-holder p {
+    padding: 0% 4% 0%;
+}
+
+.a-team-caption {
+    color: #343434;
+    padding-top: 2%;
+    width: 65%;
+}
+
+.a-team-gallery-wrapper {
+    padding-top: 10%;
+    padding: 10% 0 5%;
+}
+
+.pushtop {
+    margin-top: 15%;
+}
+
+.a-team-bg3,
+.a-team-bg2,
+.a-team-bg1 {
+    height: 400px;
+}
+
+.a-previous-works1 {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, .3), rgba(0, 0, 0, .3), url('../../images/project2.png'));
+    height: 300px;
+    background-size: cover;
+    width: 100%;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.arrowforward {
+    transform: rotate(90deg);
+    margin-left: 8px;
+    height: 32px;
+}
+
+.see_more {
+    animation: arrow alternate 1s infinite ease-in-out;
+    cursor: pointer;
+    margin-top: 8px;
+}
+
+.team-wrapper{
+    background-image: url("../../images/theteam.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    position: relative;
+    height: 700px;
+}
+
+.team-caption{
+    position: absolute;
+    top: 70%;
+}
+
+@keyframes arrow {
+    0% {
+        transform: translateY(0px);
+    }
+
+    0% {
+        transform: translateY(8px);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .a-the-team-banner img {
+        width: 100%;
+        margin-top: 65px;
+    }
+
+    .dd {
+        padding-bottom: 20px;
+    }
+
+    .disappear {
+        display: none;
+    }
+    .team-caption {
+        position: absolute;
+        top: 60%;
+    }
+}

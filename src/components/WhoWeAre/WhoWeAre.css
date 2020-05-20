@@ -1,0 +1,142 @@
+.a-wwa-wrapper-m {
+    padding: 8% 0 0%;
+}
+
+.a-wwa-wrapper{
+    padding: 8% 0 8%;
+}
+
+.image {
+    height: 100%;
+    padding: 1%;
+}
+
+.image-single {
+    width: 100%;
+}
+
+.a-wwa-caption {
+    padding-top: 5%;
+}
+
+.a-wwa-readmore {
+    text-decoration: none;
+    color: #076847;
+}
+
+.a-wwa-readmore:hover {
+    opacity: .8;
+}
+
+.a-wwa-readmore img {
+    height: 35px;
+    margin-left: 1%;
+}
+
+.ourStory {
+    height: 320px;
+    width: 50%;
+    padding: 10px;
+}
+
+.storySection {
+    height: 32rem;
+}
+
+.a-wwa-readmore:hover {
+    text-decoration: none;
+    color: #076847;
+}
+
+.a-find-us {
+    font-weight: 400;
+}
+
+.a-wwa-sideline div {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 4%;
+}
+
+.a-wwa-sideline li {
+    list-style-type: none;
+    border-left: 1px solid #076847;
+    padding: 4px 0 5px 4px;
+
+}
+
+.a-wwa-sideline li a {
+    padding-left: 20%;
+    text-decoration: none;
+    color: #076847;
+}
+
+.a-wwa-sideline li a:hover {
+    opacity: .8;
+}
+
+/* Meqia Query */
+@media screen and (max-width: 600px) {
+    .a-wwa-caption {
+        padding: 0 !important;
+    }
+
+    .image:last-child {
+        margin-top: 2%;
+    }
+
+    .a-wwa-wrapper-m {
+        padding: 20% 0 20%;
+    }
+
+    ;
+
+    .image-single {
+        padding: 2% 7% 2%;
+    }
+
+    /* .ourStory {
+        height: 240px;
+    } */
+
+    select {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        text-indent: 1px;
+        text-overflow: '';
+    }
+
+    .a-wwa-sideline{
+        padding-left: 35px;
+    }
+
+    .a-wwa-sideline li {
+        list-style-type: none;
+        border-left: 1px solid #076847;
+        padding: 4px 0 5px 4px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .ourStory {
+        height: 200px;
+    }
+
+    .a-wwa-sideline li {
+        padding: 4px 0 5px 4px;
+    }
+}
+
+
+
+@media screen and (min-width: 768px) {
+    .a-wwa-sideline {
+        height: 320px;
+    }
+
+    .a-wwa-sideline li {
+        list-style-type: none;
+        border-left: 1px solid #076847;
+        padding: 4px 0 5px 4px;
+    }
+}

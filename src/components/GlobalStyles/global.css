@@ -1,0 +1,197 @@
+.bigText{
+    font-size: 3rem;
+    line-height: 1.2;
+    font-weight: 900;
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+.bigTexts{
+    font-size: 2.8rem;
+    line-height: 1.2;
+    font-weight: 900;
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+.mediumText{
+    font-size: 1.5rem;
+    line-height: 1.4;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+.mediumtext{
+    font-size: 1.1rem;
+    line-height: 1.0;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif !important;
+}
+.biggestText{
+    font-size: 9.1rem;
+    line-height: 3.0;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+.quoteText{
+    font-size: 1rem;
+    line-height: 1.4;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+.montserrat{
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+.b4{
+    font-weight: 400 !important;
+}
+.b7{
+    font-weight: 700 !important;
+}
+.b8{
+    font-weight: 800 !important;
+}
+
+.smallBoldText{
+    font-size: 1rem;
+    line-height: 1.4;
+    font-weight: 800;
+    font-family: 'Montserrat', sans-serif !important;}
+
+.smallText{
+    font-size: 1rem;
+    line-height: 1.4;
+    font-weight: 100;
+    font-family: 'Montserrat', sans-serif !important;}
+
+.extraSmallText{
+    font-size: .8rem;
+    line-height: 1.4;
+    font-weight: 100;
+    font-family: 'Montserrat', sans-serif !important;}
+
+.smallestText{
+    font-size: .8rem;
+    line-height: 1.7;
+    font-weight: 100;
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+.green{
+    color: #076847 !important;
+}
+
+.greenbg{
+    background-color: #076847;
+}
+
+.white{
+    color: #fff !important;
+}
+
+.applyInput{
+    color: #fff !important;
+    border-bottom: 1px solid #fff;
+}
+
+.applyButton{
+    background-color: #fff !important;
+}
+
+.whitealways{
+    border: 7px solid #fff !important;
+}
+
+.black{
+    color: #343434; 
+}
+
+
+.whitebg, .whitebgNav{
+    background-color: #fff;
+}
+
+.whiteText{
+    color: #FFF !important;
+}
+
+.greybg{
+    background-color: #F3F3F3;
+}
+
+.blackText{
+    color: #343434;
+}
+
+.mp0{
+    padding: 0 !important;
+}
+
+.toggleButton{
+    z-index: 2000;
+    position: fixed;
+    padding: 10px;
+    font-weight: bold;
+    border: 0;
+}
+
+a, input, textarea, button {
+    outline: none;
+    text-decoration: none !important;
+    font-family: inherit;
+}
+
+input{
+    padding: 4px 8px;
+}
+
+a:hover{
+    text-decoration: none !important;
+}
+.a-banner-heroImgL{
+    margin: 0 auto;
+    width: 100%;
+    display: block !important;
+}
+
+.break{
+    display: none;
+}
+
+.cover{
+    padding: 5px 0 0 !important;
+}
+
+.phldr{
+    width: 100%;
+}
+
+
+
+@media screen and (max-width: 600px){
+    .bigGreenText{
+        color: #076847;
+        font-size: 3rem;
+        font-weight: 900;
+        font-family: 'Montserrat', sans-serif;
+    }
+    .bigDarkText{
+        color: #343434;
+        font-size: 3rem;
+        font-weight: 900;
+        font-family: 'Montserrat', sans-serif;
+    } 
+
+    .break{
+        display: block;
+    }
+
+    .coverr{
+        padding: 5px 0 5px !important;
+    }
+
+    .pushtt{
+        margin-top: 20px !important;
+    }
+}

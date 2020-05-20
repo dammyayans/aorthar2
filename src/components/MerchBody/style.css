@@ -1,0 +1,241 @@
+.merch-banner {
+    height: 550px;
+    width: 100%;
+    padding: 0;
+    padding-bottom: 24px;
+    position: relative;
+}
+
+.green {
+    color: #076847;
+}
+
+.justify-content-space {
+    justify-content: space-between;
+}
+
+.button {
+    border: none;
+    background-color: #f2f2f2;
+    color: #076847;
+    padding: 10px 25px;
+}
+
+.bg-green {
+    background-color: #076847 !important;
+    color: #fff !important;
+}
+
+.button:hover {
+    box-shadow: 0px 2px 5px #afaaaa;
+}
+
+.disabled:disabled {
+    cursor: not-allowed !important;
+}
+
+.disabled:hover {
+    cursor: pointer;
+}
+
+.shirt {
+    align-items: center;
+    padding-right: 16px;
+    flex-direction: column;
+    margin-bottom: 24px;
+}
+
+.shirt img {
+    max-width: 420px;
+}
+
+.cartButton {
+    border: none;
+    border-radius: 8px;
+    background-color: #076847;
+    color: #fff;
+    opacity: .8;
+    padding: 6px;
+    font-weight: 500;
+    outline: none;
+    font-size: 12px;
+}
+
+
+
+.cartButton:hover {
+    box-shadow: 0px 2px 5px #000;
+
+}
+
+.color-container {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.color-container .color {
+    box-shadow: 0px 2px 5px rgb(122, 122, 122);
+    height: 24px;
+    width: 24px;
+    cursor: pointer;
+}
+
+.color:first-child {
+    background-color: #076847;
+}
+
+.color:nth-child(2) {
+    background-color: #000000;
+}
+
+.color:last-child {
+    background-color: #fff;
+}
+
+input {
+    background: transparent;
+    display: block;
+    border: 0;
+    border-bottom: 1px solid #343434;
+    width: 100%;
+    padding-bottom: 8px;
+}
+
+.serviceOptions {
+    width: 100%;
+    resize: none;
+    border: 0;
+    border-bottom: 1px solid #343434;
+    background: transparent;
+    padding: 0;
+}
+
+.serviceOptions {
+    padding: 6px;
+    border-bottom: 1px solid #343434;
+}
+
+.serviceOptions:active {
+    border: 0;
+}
+
+.submitButton {
+    padding: 10px 40px;
+    background-color: #076847;
+    border: 0;
+    color: #fff;
+}
+
+.counter {
+    font-size: 15px;
+}
+
+.counter img {
+    cursor: pointer;
+}
+
+.merch-banner3,
+.merch-banner2,
+.merch-banner1 {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    box-sizing: border-box;
+    margin-top: 18px;
+}
+
+.merch-banner1 {
+    /* background-image: url("../../images/uuuu.png"); */
+    background: linear-gradient(to bottom, #00000071, #0000005a), url("../../images/uuuu.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.merch-banner1:hover {
+    background: linear-gradient(to bottom, #00000042, #00000042), url("../../images/uuuu.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition-duration: 2s;
+    transition-timing-function: ease-in;
+}
+
+.merch-banner2:hover {
+    background: linear-gradient(to bottom, #00000042, #00000042), url("../../images/fait beauty2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition-duration: 2s;
+    transition-timing-function: ease-in;
+}
+
+.merch-banner3:hover {
+    background: linear-gradient(to bottom, #00000042, #00000042), url("../../images/pelumi4.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition-duration: 2s;
+    transition-timing-function: ease-in;
+}
+
+.merch-banner2 {
+    background-image: linear-gradient(to bottom, #00000071, #0000005a), url("../../images/fait beauty2.png");
+
+}
+
+.merch-banner3 {
+    background-image: linear-gradient(to bottom, #00000071, #0000005a), url("../../images/pelumi4.png");
+
+}
+
+.lgsrceen{
+    display: block;
+}
+
+.smscreen{
+    display: none !important;
+}
+
+
+@media only screen and (max-width:767px) {
+    .merch-banner {
+        margin-top: 65px;
+        height: 85vh;
+    }
+
+    .merch-banner3,
+    .merch-banner2,
+    .merch-banner1 {
+        background-position-y: top;
+
+    }
+
+    .merch-banner3:hover,
+    .merch-banner2:hover,
+    .merch-banner1:hover {
+        background-position-y: center;
+    }
+
+    .lgscreen{
+        display: none !important;
+    }
+
+    .smscreen{
+        display: block !important;
+    }
+
+}
+
+@media only screen and (max-width:410px) {
+    .merch-banner {
+        width: 98vw !important;
+    }
+}
+
+@media only screen and (max-width:388px) {
+    .merch-banner {
+        width: 100vw !important;
+    }
+}

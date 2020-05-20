@@ -1,0 +1,73 @@
+input{
+    background: transparent;
+    display: block;
+    border: 0;
+    border-bottom: 1px solid #343434;
+    width:100%;
+    padding-bottom: 8px;
+}
+textarea, 
+.serviceOptions{
+    width: 100%;
+    resize: none;
+    border: 0;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    color: #fff;
+    padding: 0;
+}
+.serviceOptions{
+    padding: 6px;
+    border-bottom: 1px solid #343434;
+}
+.serviceOptions:active{
+    border: 0;
+}
+textarea{
+    height: 100px;    
+}
+
+.submitButton{
+    padding: 10px 40px;
+    background-color: #076847;
+    border: 0;
+    color: #fff;
+}
+
+.file{
+    border: 0;
+}
+
+
+
+input[type="file"]{
+    display: none;
+}
+
+label{
+    height: 40px;
+    width: 100%;
+    background-color: #c7c7c7;
+    position: absolute; 
+    margin: auto;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pbbb{
+    padding-bottom: 0 !important;
+}
+
+
+@media screen and (max-width: 600px){
+    .smpt{
+        margin-top: 40px !important;
+    }
+    .pbbb{
+        padding-bottom: 40px !important;
+    }
+}

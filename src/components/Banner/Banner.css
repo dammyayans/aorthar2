@@ -1,0 +1,235 @@
+.a-banner-wrapper {
+    padding: 10% 0 10%;
+    margin-top: 65px;
+}
+
+.a-banner-heroImg {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.a-banner-heroImg,
+.a-banner-heroImgD {
+    width: 100%;
+    /* margin: 0 auto; */
+}
+
+.a-banner-caption {
+    padding-top: 6%;
+}
+
+img.a-banner-company-img {
+    width: 100px;
+    height: 70px;
+}
+
+.daba{
+    width: 50px !important;
+    height: 80px !important;
+}
+
+.cheetah{
+    width: 100px;
+    height: 60px !important;
+}
+
+.a-banner-caption p {
+    width: 70%;
+}
+
+.a-banner-trusted-brands {
+    padding: 2% 0%;
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+}
+
+.a-banner-brands-caption {
+    position: relative;
+}
+
+.a-banner-brands-caption div {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 30%;
+    margin: auto;
+}
+
+select,
+.service {
+    color: #fff;
+    border-radius: 5px;
+    font-weight: bold;
+    background-color: #076847;
+}
+
+.service:hover {
+    color: #fff;
+    opacity: .9;
+}
+
+.service_menu {
+    border: none;
+}
+
+.service_menu a {
+    color: #076847 !important;
+    margin-bottom: 6px;
+
+}
+
+option {
+    background-color: #fff;
+    color: #076847;
+    outline: none;
+}
+
+.a-banner-pattern {
+    background-image: url('../../images/pattern.png');
+    background-repeat: repeat-x;
+    height: 150px;
+}
+
+.gStarted {
+    padding: 10px !important;
+    border: 1px solid #076847;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.greenText {
+    color: #076847 !important;
+
+}
+
+.dropli {
+    width: 100%;
+    box-sizing: content-box;
+    padding: 8px 0;
+}
+
+.dropli:hover {
+    opacity: 0.8;
+}
+
+.dropmenu {
+    padding: 16px;
+    box-sizing: content-box;
+    z-index: 2 !important;
+}
+
+.dropdownContainer {
+    position: relative;
+    z-index: 3;
+}
+
+.playButton {
+    padding: 0 10px;
+}
+
+.pulse {
+    padding: 8px;
+    border-radius: 15%;
+    background: #076847;
+    cursor: pointer;
+    box-shadow: 0 0 0 #076847;
+    animation: pulse 2s infinite;
+    margin-left: 30px;
+}
+
+.pulse:hover {
+    animation: none;
+}
+
+
+
+@keyframes pulse {
+    0% {
+        -moz-box-shadow: 0 0 0 0 rgba(10, 138, 95, 0.8);
+        box-shadow: 0 0 0 0 rgba(10, 138, 95, 0.8);
+    }
+
+    70% {
+        -moz-box-shadow: 0 0 0 30px rgba(204, 169, 44, 0);
+        box-shadow: 0 0 0 30px rgba(204, 169, 44, 0);
+    }
+
+    100% {
+        -moz-box-shadow: 0 0 0 0 rgba(44, 204, 116 0.5);
+        box-shadow: 0 0 0 0 rgba(44, 204, 116, 0.5);
+    }
+}
+
+/* MEDIA QUERY */
+@media screen and (max-width: 600px) {
+
+    .a-banner-wrapper {
+        margin-top: 15%;
+        margin: 0 auto;
+    }
+
+    .a-banner-pattern {
+        background-image: url('../../images/pattern.png');
+        background-repeat: repeat-x;
+        height: 95px;
+        /* margin-top: 30px; */
+    }
+
+    .heroheroL,
+    .heroheroD {
+        margin: 0 auto;
+    }
+
+    .a-banner {
+        padding-top: 30%;
+    }
+
+    .a-banner-caption {
+        padding: 0;
+    }
+
+    .a-banner-heroImg {
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin: 0 auto;
+    }
+
+    .a-banner-caption p {
+        width: 100%;
+    }
+
+    .p {
+        padding-top: 20px;
+    }
+
+    select {
+        width: 100%;
+        padding-top: 10px;
+    }
+
+    .a-banner-brands-caption {
+        position: relative;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+    }
+
+    .a-banner-company-img {
+        width: 33.3%;
+        padding-top: 5%;
+    }
+
+    .a-banner-brands-caption div {
+        padding-left: 8%;
+    }
+
+    .a-banner-trusted-brands {
+        padding: 40px 0 40px;
+    }
+
+}

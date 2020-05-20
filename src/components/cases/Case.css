@@ -1,0 +1,66 @@
+.App {
+    font-family: sans-serif;
+    text-align: center;
+  }
+  
+  button{
+  background-color: #4caf50;
+  outline: none;
+  }
+  
+  .branding,
+  .bbranding,
+  .dabas,
+  .codson,
+  .ui,
+  .uiuu,
+  .uiuuw,
+  .logo,
+  .sos{
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 300px;
+    margin: 0 auto;
+    cursor: pointer;
+  }
+
+  .dabas{
+    background-image: url("../../images/00000.png");
+  }
+
+  .branding{
+    background-image: url("../../images/000.png");
+  }
+
+  .ui{
+    background-image: url("../../images/0000.png");
+  }
+
+  .logo{
+    background-image: url("../../images/branding21.png");
+  }
+
+
+
+  .codson{
+    background-image: url("../../images/uiuu.png");
+  }
+
+  .uiuu{
+    background-image: url("../../images/abit.png");
+  }
+
+
+  .uiuuw{
+    background-image: url("../../images/uiuuweb.png");
+  }
+
+  /* CROSSCHECKED */
+
+  .bbranding{
+    background-image: url("../../images/branding212.png");
+  }
+
+  .sos{
+    background-image: url("../../images/Ofelus.png");
+  }

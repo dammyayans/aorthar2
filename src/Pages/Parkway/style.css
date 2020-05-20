@@ -1,0 +1,26 @@
+.gunner{
+    width: 100%;
+    margin-top: 70px;
+}
+
+.style{
+    width: 100%;
+}
+
+.upp{
+    margin-top: 45px;
+}
+
+.uuup{
+    margin-top: 30px;
+}
+
+.doown{
+    padding-top: 30px;
+}
+
+@media screen and (max-width: 600px){
+    .smpt{
+        margin-top: 40px !important;
+    }
+}
