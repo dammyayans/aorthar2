@@ -163,7 +163,7 @@ export default class Parkway extends Component {
                 
                 <Row>
                   <Col md={2}>
-                    <img src={NA7} alt="" className="smt smIcon"/>
+                    <img src={NA7} alt="" className="smt smIcon msg"/>
                   </Col>
                   <Col md={10} className="smallestText blackText b4 montserrat pb-3 text-justify smt">
                    We conducted a some questionnaire that gave us the best
@@ -176,7 +176,7 @@ export default class Parkway extends Component {
                 
                 <Row>
                   <Col md={2}>
-                    <img src={NA8} alt="" className="smt smIcon"/>
+                    <img src={NA8} alt="" className="smt smIcon msg"/>
                   </Col>
                   <Col md={10} className="smallestText blackText b4 montserrat pb-3 text-justify smt">
                     We used a collection (family) of icons that all look and feel
@@ -188,7 +188,7 @@ export default class Parkway extends Component {
                
                 <Row>
                   <Col md={2}>
-                    <img src={NA9} alt="" className="smt smIcon"/>
+                    <img src={NA9} alt="" className="smt smIcon msg"/>
                   </Col>
                   <Col md={10} className="smallestText blackText b4 montserrat pt-md-2 pb-md-3 text-justify smt">
                     The scale of our work dictates what the combination of icon
