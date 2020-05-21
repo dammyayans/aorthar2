@@ -7,34 +7,34 @@ import "./Banner.css";
 
 import HeroImg from "../../images/heroImg.svg";
 import HeroImgD from "../../images/heroImgD.svg";
-import Company1 from "../../images/company1.png";
-import Company2 from "../../images/company2.png";
-import Company3 from "../../images/company3.png";
-import Company4 from "../../images/company4.png";
-import Company5 from "../../images/company5.png";
-import Company6 from "../../images/company6.png";
-import Company7 from "../../images/company7.png";
-import Company8 from "../../images/company8.png";
+// import Company1 from "../../images/company1.png";
+// import Company2 from "../../images/company2.png";
+// import Company3 from "../../images/company3.png";
+// import Company4 from "../../images/company4.png";
+// import Company5 from "../../images/company5.png";
+// import Company6 from "../../images/company6.png";
+// import Company7 from "../../images/company7.png";
+// import Company8 from "../../images/company8.png";
 import PlayIcon from "../../images/playIcon.png";
 import video from "../../images/Aorthar Playback.mp4";
 
-import makeCarousel from "react-reveal/makeCarousel";
-import Slide from "react-reveal/Slide";
+// import makeCarousel from "react-reveal/makeCarousel";
+// import Slide from "react-reveal/Slide";
 import Fade from "react-reveal/Fade";
-import styled from "styled-components";
+// import styled from "styled-components";
 import ReactTypingEffect from "react-typing-effect";
 
-const SliderContainer = styled.div`
-  position: relative;
-  overflow: hidden;
-  min-height: 50px;
-  height: 5rem;
-  width: 100%;
-`;
-const CarouselUI = ({ children }) => (
-  <SliderContainer>{children}</SliderContainer>
-);
-const Carousel = makeCarousel(CarouselUI);
+// const SliderContainer = styled.div`
+//   position: relative;
+//   overflow: hidden;
+//   min-height: 50px;
+//   height: 5rem;
+//   width: 100%;
+// `;
+// const CarouselUI = ({ children }) => (
+//   <SliderContainer>{children}</SliderContainer>
+// );
+// const Carousel = makeCarousel(CarouselUI);
 const CustomToggle = React.forwardRef(({ children, onClick }, ref) => (
   <a
     href="/#"
@@ -180,7 +180,7 @@ export default class Banner extends Component {
             </Col>
           </Row>
         </Container>
-        <Row className="justify-content-md-center a-banner-trusted-brands greybg">
+        {/* <Row className="justify-content-md-center a-banner-trusted-brands greybg">
           <Col
             md={3}
             xs={12}
@@ -259,7 +259,7 @@ export default class Banner extends Component {
               </Slide>
             </Carousel>
           </Col>
-        </Row>
+        </Row> */}
         <Row className="a-banner-pattern"></Row>
       </Container>
     );

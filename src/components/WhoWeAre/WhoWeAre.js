@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 import "../GlobalStyles/global.css";
 import "./WhoWeAre.css";
@@ -64,12 +64,12 @@ export default class WhoWeAre extends Component {
                     funnel of keeping the heart of business functional –– Sales!
                     </p>
                     <div>
-                      <Link
-                        to="/theteam"
+                      <a
+                        href="/theteam"
                         className="a-wwa-readmore green b7 smallestText montserrat"
                       >
                         Read more <img src={Forward} alt="forward" />
-                      </Link>
+                      </a>
                     </div>
                   </div>
                 </Fade>
