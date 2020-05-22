@@ -4,6 +4,7 @@ import "react-image-lightbox/style.css";
 import { Col } from "react-bootstrap";
 
 
+import u0 from "../../images/ui0.jpeg";
 import u1 from "../../images/ui/u1.png";
 import u2 from "../../images/ui/u2.png";
 import u3 from "../../images/ui/u3.png";
@@ -11,7 +12,7 @@ import u4 from "../../images/ui/u4.png";
 import u5 from "../../images/ui/u5.png";
 import u6 from "../../images/ui/u6.gif";
 
-const ui = [u1, u2, u3, u4, u5, u6];
+const ui = [u1, u0, u2, u3, u4, u5, u6];
 
 export default class LightboxExample extends Component {
   constructor(props) {

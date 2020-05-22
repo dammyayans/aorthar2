@@ -3,6 +3,7 @@ import Lightbox from "react-image-lightbox";
 import "react-image-lightbox/style.css";
 import { Col } from "react-bootstrap";
 
+import id0 from "../../images/id0.jpeg";
 import id1 from "../../images/id/id1.png";
 import id2 from "../../images/id/id2.png";
 import id3 from "../../images/id/id3.png";
@@ -25,7 +26,7 @@ import id19 from "../../images/id/id19.png";
 import id20 from "../../images/id/id20.png";
 import id21 from "../../images/id/id21.png";
 
-const img = [id1, id2, id3, id4, id5, id6, id7, id8, id9, id10, id11, id12, id13, id14, id15, id16, id17, id18, id19, id20, id21];
+const img = [id0, id1, id2, id3, id4, id5, id6, id7, id8, id9, id10, id11, id12, id13, id14, id15, id16, id17, id18, id19, id20, id21];
 
 export default class LightboxExample extends Component {
   constructor(props) {

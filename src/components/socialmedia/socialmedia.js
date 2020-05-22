@@ -3,6 +3,7 @@ import Lightbox from "react-image-lightbox";
 import "react-image-lightbox/style.css"; 
 import { Col } from "react-bootstrap";
 
+import s0 from "../../images/sos0.jpeg";
 import s1 from "../../images/sos/sos1.png";
 import s2 from "../../images/sos/sos2.png";
 import s3 from "../../images/sos/sos3.png";
@@ -12,7 +13,7 @@ import s6 from "../../images/sos/sos6.png";
 import s7 from "../../images/sos/sos7.jpeg";
 import s8 from "../../images/sos/sos8.jpeg";
 
-const ill = [s1, s2, s3, s4, s5, s6, s7, s8];
+const ill = [s1, s0, s2, s3, s4, s5, s6, s7, s8];
 
 export default class LightboxExample extends Component {
   constructor(props) {
