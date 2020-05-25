@@ -1,4 +1,4 @@
-import React, { useState, useEffect, lazy, Suspense } from "react";
+import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import storage from "local-storage-fallback";
 import "./App.css";
@@ -6,189 +6,20 @@ import "./components/Navbar/Navbar.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import NavBar from "./components/Navbar/Navbar";
 import { ThemeProvider, createGlobalStyle } from "styled-components";
-import loader from "./images/Loader.mp4";
 import Default from "./Pages/404";
-
-const Home = lazy(
-  () =>
-    new Promise((resolve, reject) =>
-      setTimeout(() => resolve(import("./Pages/Home")), 4000)
-    )
-);
-
-const TheTeam = lazy(
-  () =>
-    new Promise((resolve, reject) =>
-      setTimeout(() => resolve(import("./Pages/TheTeam")), 4000)
-    )
-);
-const OurWorks = lazy(
-  () =>
-    new Promise((resolve, reject) =>
-      setTimeout(() => resolve(import("./Pages/OurWorks")), 4000)
-    )
-);
-const Confirmation = lazy(
-  () =>
-    new Promise((resolve, reject) =>
-      setTimeout(() => resolve(import("./Pages/Confirmation")), 4000)
-    )
-);
-const Subscription = lazy(
-  () =>
-    new Promise((resolve, reject) =>
-      setTimeout(() => resolve(import("./Pages/Subscription")), 4000)
-    )
-);
-const Courses = lazy(
-  () =>
-    new Promise((resolve, reject) =>
-      setTimeout(() => resolve(import("./Pages/Courses")), 4000)
-    )
-);
-// const Case = lazy(
-//   () =>
-//     new Promise((resolve, reject) =>
-//       setTimeout(() => resolve(import("./Pages/Case")), 4000)
-//     )
-// );
-const NathanApp = lazy(
-  () =>
-    new Promise((resolve, reject) =>
-      setTimeout(() => resolve(import("./Pages/NathanApp")), 4000)
-    )
-);
-const Parkway = lazy(
-  () =>
-    new Promise((resolve, reject) =>
-      setTimeout(() => resolve(import("./Pages/Parkway")), 4000)
-    )
-);
-const Raeanna = lazy(
-  () =>
-    new Promise((resolve, reject) =>
-      setTimeout(() => resolve(import("./Pages/Raeanna")), 4000)
-    )
-);
-const Form = lazy(
-  () =>
-    new Promise((resolve, reject) =>
-      setTimeout(() => resolve(import("./Pages/Form")), 4000)
-    )
-);
-const Career = lazy(
-  () =>
-    new Promise((resolve, reject) =>
-      setTimeout(() => resolve(import("./Pages/Career")), 4000)
-    )
-);
-const Merch = lazy(
-  () =>
-    new Promise((resolve, reject) =>
-      setTimeout(() => resolve(import("./Pages/Merch")), 4000)
-    )
-);
-
-const Footer = lazy(
-  () =>
-    new Promise((resolve, reject) =>
-      setTimeout(() => resolve(import("./components/Footer/Footer")), 4200)
-    )
-);
-const loading = (
-  <div
-    style={{
-      minHeight: "100vh",
-      display: "flex",
-      justifyContent: "center",
-      alignItems: "center",
-      position: "relative",
-      backgroundColor: "#fff",
-      zIndex: "535362",
-      marginTop: "-28px",
-    }}
-  >
-    <video
-      src={loader}
-      autoPlay
-      muted
-      loop
-      style={{
-        position: "absolute",
-        top: 0,
-        left: 0,
-        right: 0,
-        bottom: 0,
-        width: "45%",
-        height: "45%",
-        overflow: "hidden",
-        margin: "auto",
-      }}
-    />
-  </div>
-);
-
-const HomeSusp = () => (
-  <Suspense fallback={loading}>
-    <Home />
-  </Suspense>
-);
-
-const TheTeamSusp = () => (
-  <Suspense fallback={loading}>
-    <TheTeam />
-  </Suspense>
-);
-const OurWorksSusp = () => (
-  <Suspense fallback={loading}>
-    <OurWorks />
-  </Suspense>
-);
-const ConfirmationSusp = (props) => (
-  <Suspense fallback={loading}>
-    <Confirmation props={props} />
-  </Suspense>
-);
-const SubscriptionSusp = () => (
-  <Suspense fallback={loading}>
-    <Subscription />
-  </Suspense>
-);
-const CoursesSusp = () => (
-  <Suspense fallback={loading}>
-    <Courses />
-  </Suspense>
-);
-const NathanAppSusp = () => (
-  <Suspense fallback={loading}>
-    <NathanApp />
-  </Suspense>
-);
-const ParkwaySusp = () => (
-  <Suspense fallback={loading}>
-    <Parkway />
-  </Suspense>
-);
-const RaeannaSusp = () => (
-  <Suspense fallback={loading}>
-    <Raeanna />
-  </Suspense>
-);
-const FormSusp = (props) => (
-  <Suspense fallback={loading}>
-    <Form props={props} />
-  </Suspense>
-);
-const CareerSusp = (props) => (
-  <Suspense fallback={loading}>
-    <Career props={props} />
-  </Suspense>
-);
-const MerchSusp = (props) => (
-  <Suspense fallback={loading}>
-    <Merch props={props} />
-  </Suspense>
-);
+import Home from "./Pages/Home";
+import TheTeam from "./Pages/TheTeam";
+import OurWorks from "./Pages/OurWorks";
+import Confirmation from "./Pages/Confirmation";
+import Subscription from "./Pages/Subscription";
+import Courses from "./Pages/Courses";
+import NathanApp from "./Pages/NathanApp";
+import Parkway from "./Pages/Parkway";
+import Raeanna from "./Pages/Raeanna";
+import Form from "./Pages/Form";
+import Career from "./Pages/Career";
+import Merch from "./Pages/Merch";
+import Footer from "./components/Footer/Footer";
 
 const GlobalStyle = createGlobalStyle`
 
@@ -278,57 +109,57 @@ function getInitialTheme() {
 
 export default function App() {
   const [theme, setTheme] = useState(getInitialTheme);
+  const [loading, setLoading] = useState(false);
   useEffect(() => {
     storage.setItem("theme", JSON.stringify(theme));
   }, [theme]);
+  useEffect(() => setInterval(() => setLoading(true), 4000), []);
 
   return (
     <Router>
       <ThemeProvider theme={theme}>
         <>
           <div className="cover">
-            <NavBar
-              onClick={() =>
-                setTheme(
-                  theme.mode === "dark" ? { mode: "light" } : { mode: "dark" }
-                )
-              }
-            />
-            <Switch>
-              <Route exact path="/" component={HomeSusp} />
-
-              <Route path="/Subscription" component={SubscriptionSusp} />
-
-              <Route path="/Courses" component={CoursesSusp} />
-
-              {/* <Route path="/Case" component={CaseSusp} /> */}
-
-              <Route path="/NathanApp" component={NathanAppSusp} />
-
-              <Route path="/Parkway" component={ParkwaySusp} />
-
-              <Route path="/Raeanna" component={RaeannaSusp} />
-
-              <Route
-                path="/Confirmation/name=:name"
-                component={ConfirmationSusp}
+            {loading ? (
+              <NavBar
+                onClick={() =>
+                  setTheme(
+                    theme.mode === "dark" ? { mode: "light" } : { mode: "dark" }
+                  )
+                }
               />
+            ) : null}
+            <Switch>
+              <Route exact path="/" component={Home} />
 
-              <Route path="/OurWorks" component={OurWorksSusp} />
+              <Route path="/Subscription" component={Subscription} />
 
-              <Route path="/TheTeam" component={TheTeamSusp} />
+              <Route path="/Courses" component={Courses} />
 
-              <Route path="/Merch" component={MerchSusp} />
+              {/* <Route path="/Case" component={Case} /> */}
 
-              <Route path="/Form:service" component={FormSusp} />
+              <Route path="/NathanApp" component={NathanApp} />
 
-              <Route path="/Career" component={CareerSusp} />
+              <Route path="/Parkway" component={Parkway} />
+
+              <Route path="/Raeanna" component={Raeanna} />
+
+              <Route path="/Confirmation/name=:name" component={Confirmation} />
+
+              <Route path="/OurWorks" component={OurWorks} />
+
+              <Route path="/TheTeam" component={TheTeam} />
+
+              <Route path="/Merch" component={Merch} />
+
+              <Route path="/Form:service" component={Form} />
+
+              <Route path="/Career" component={Career} />
 
               <Route component={Default} />
             </Switch>
-            <Suspense fallback={""}>
-              <Footer />
-            </Suspense>
+
+            {loading ? <Footer /> : null}
             <GlobalStyle />
           </div>
         </>
